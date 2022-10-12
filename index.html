@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css" type="text/css" />
+        <title>quiz your baddies</title>
+    </head>
+    <body>
+        <header>
+            <h1>USA Trivia</h1>
+        </header>
+        <main>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" required />
+                <label for="email">Email:</label>
+                <input type="email" name="email" required />
+                <hr>
+                
+                <p>Which black person was the president?</p>
+                <input id="samuel" type="radio" name="blackPresident"/>
+                <label for="samuel">Samuel Jackson</label>
+                
+                <input id="barack" type="radio" name="blackPresident"/>
+                <label for="barack">Barack Obama</label>
+                
+                <input id="michelle" type="radio" name="blackPresident"/>
+                <label for="michelle">Michelle Obama</label>
+                
+                <input id="kobe" type="radio" name="blackPresident"/>
+                <label for="kobe">Kobe Bryant</label>
+                
+                <br>
+                <br>
+                <p>(Select all) Which states touch a coast?</p>
+                <input id="Louisiana" type="checkbox" name="coastalStates"/>
+                <label for="Louisiana">Louisiana</label>
+                
+                <input id="Iowa" type="checkbox" name="coastalStates"/>
+                <label for="Iowa">Iowa</label>
+                
+                <input id="Montana" type="checkbox" name="coastalStates"/>
+                <label for="Montana">Montana</label>
+                
+                <input id="Arizona" type="checkbox" name="coastalStates"/>
+                <label for="Arizona">Arizona</label>
+                
+                <input id="Oklahoma" type="checkbox" name="coastalStates"/>
+                <label for="Oklahoma">Oklahoma</label>
+                
+                <br>
+                <br>
+                <br>
+                <label for="language">Most widely spoken language?</label>
+                <input type="text" list="languages" name="language" id="language"/>
+                <datalist id="languages">
+                    <option value="Spanish"></option>
+                    <option value="Japanese"></option>
+                    <option value="English"></option>
+                    <option value="French"></option>
+                    <option value="Mongolian"></option>
+                    <option value="Manderin"></option>
+                    <option value="Hebrew"></option>
+                    <option value="Danish"></option>
+                </datalist>
+                
+                <br>
+                <br>
+                <br>
+                <label for="originStory">Describe how the United States of America came to be.</label>
+                <br>
+                <textarea name="originStory" placeholder="400 character limit" maxlength="200" rows="10" cols="50"></textarea>
+                <br>
+                <br>
+                <hr>
+                <label for="rate">Rate this quiz from 1-10</label>
+                <input type="range" name="rate" min="1" max="10" step="1" value="10" required/>
+                <br>
+                <br>
+                <input type="submit" value="Submit"/>
+            </form>
+        </main>
+    </body>
+</html>
